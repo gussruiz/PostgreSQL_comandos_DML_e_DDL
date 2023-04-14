@@ -117,3 +117,8 @@ create table teste.cursos_programacao(
 
 insert into teste.cursos_programacao
 select curso.id, curso.nome from curso where categoria_id = 2;
+
+-- aula 4
+
+update teste.cursos_programacao set nome_curso = nome
+	from curso where teste.cursos_programacao.id_curso = curso.id;
